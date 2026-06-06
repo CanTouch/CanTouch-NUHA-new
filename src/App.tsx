@@ -796,7 +796,7 @@ export default function App() {
                       </a>
                       <span className="text-gray-400 font-light hidden sm:inline">|</span>
                       <p className="text-gray-600 flex items-center justify-center gap-1.5">
-                        <Phone className="w-4 h-4 inline" /> +256 759984302
+                        <Phone className="w-4 h-4 inline" /> +256 759984301
                       </p>
                     </div>
                   </div>
@@ -1484,7 +1484,7 @@ export default function App() {
                             <div>
                               <p className="font-serif font-bold text-white text-base">General Phone Lines</p>
                               <p className="text-xs text-gray-300 font-light mt-1">
-                                +256 759984302
+                                +256 759984301
                               </p>
                             </div>
                           </div>
@@ -1684,7 +1684,7 @@ export default function App() {
                   <div className="space-y-2 text-xs text-gray-600">
                     <p className="leading-relaxed">To book, verify registry parameters, or query local hospitality tariffs, contact the association:</p>
                     <a href="mailto:numa.hoteliers.association@gmail.com" className="text-[#C9A35B] font-mono font-bold block hover:underline leading-none pt-1">numa.hoteliers.association@gmail.com</a>
-                    <a href="tel:+256759984302" className="text-gray-500 font-mono font-bold block hover:underline leading-none pt-2">+256 759984302</a>
+                    <a href="tel:+256759984301" className="text-gray-500 font-mono font-bold block hover:underline leading-none pt-2">+256 759984301</a>
                   </div>
                 </div>
               </div>
@@ -1791,7 +1791,7 @@ export default function App() {
                         value={eventBookingForm.phone}
                         onChange={(e) => setEventBookingForm({ ...eventBookingForm, phone: e.target.value })}
                         required
-                        placeholder="e.g. +256 759984302"
+                        placeholder="e.g. +256 759984301"
                         className="w-full bg-slate-50 border px-3 py-2.5 rounded-xl text-xs focus:outline-none"
                       />
                     </div>
