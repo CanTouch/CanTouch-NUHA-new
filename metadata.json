@@ -1,0 +1,6 @@
+{
+  "name": "Northern Uganda Hoteliers Association",
+  "description": "Official website of the Northern Uganda Hoteliers Association (NUHA), promoting tourism and exceptional hospitality standards in Northern Uganda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

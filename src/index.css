@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-brand-primary: #0F2344;
+  --color-brand-secondary: #3FAE49;
+  --color-brand-accent: #C9A35B;
+  --color-brand-dark: #111111;
+  --color-brand-light: #F8F8F8;
+
+  --text-xs: 0.8125rem;   /* ~13px (was 12px) */
+  --text-sm: 0.9375rem;   /* ~15px (was 14px) */
+  --text-base: 1.0625rem; /* ~17px (was 16px) */
+  --text-lg: 1.1875rem;   /* ~19px (was 18px) */
+  --text-xl: 1.3125rem;   /* ~21px (was 20px) */
+}
+
+/* Smooth Scrolling and Font Enhancements */
+html {
+  scroll-behavior: smooth;
+  background-color: #F8F8F8;
+  color: #111111;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Luxury Heading Helper */
+.font-serif-heading {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar for premium aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F8F8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A35B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0F2344;
+}
