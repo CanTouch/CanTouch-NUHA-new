@@ -1,4 +1,4 @@
-import logo from '../assets/nuha-logo.png';
+import logo from '../../assets/nuha-logo.png';
 
 export default function NuhaLogo({ className = "w-10 h-10", iconOnly = false }: NuhaLogoProps) {
   return (
