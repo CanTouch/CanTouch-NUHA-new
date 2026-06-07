@@ -62,7 +62,7 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
             onClick={() => handleNavigate('home')}
             className="cursor-pointer group flex items-center"
           >
-            <NuhaLogo className="transition-transform duration-300 group-hover:scale-105" />
+            <NuhaLogo className="h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
           </div>
 
           {/* Desktop Navigation */}
