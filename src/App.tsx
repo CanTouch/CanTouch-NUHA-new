@@ -49,56 +49,56 @@ const PAGE_SEO: Record<string, { title: string; description: string; ogImage: st
     description: "The premier collective voice uniting stellar hoteliers, luxurious safari lodges, and exquisite boutique retreats across Northern Uganda. Connect with peak regional experiences.",
     ogImage: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1600",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/"
+    url: "https://nuhaofficial.com/"
   },
   hotels: {
     title: "Directory of Vetted Hotels & Safari Lodges in Northern Uganda | NUHA",
     description: "Explore our fully vetted directory of luxury lodges, guest homes, and boutique retreats across Gulu, Lira, Kitgum, Arua, and Murchison Falls.",
     ogImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/hotels"
+    url: "https://nuhaofficial.com/hotels"
   },
   attractions: {
     title: "Explore Tourism Attractions & Wildlife Safaris in Northern Uganda | NUHA",
     description: "Plan your journey to iconic destinations: Murchison Falls National Park, Kidepo Valley National Park, and historic cultural sites across Northern Uganda.",
     ogImage: "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/attractions"
+    url: "https://nuhaofficial.com/attractions"
   },
   events: {
     title: "Upcoming Hospitality Training & Bulletins | NUHA Northern Uganda",
     description: "Register for NUHA's upcoming bulletins, capacity building training, and hospitality networking workshops in Gulu, Lira, and beyond.",
     ogImage: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/events"
+    url: "https://nuhaofficial.com/events"
   },
   gallery: {
     title: "Media Gallery - Hospitality, Wildlife & Landscapes | NUHA",
     description: "A showcase of exquisite member accommodations, pristine natural reserves, local wildlife, and vibrant cultural events throughout Northern Uganda.",
     ogImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/gallery"
+    url: "https://nuhaofficial.com/gallery"
   },
   membership: {
     title: "Become a Registered Member of NUHA | Northern Uganda Hospitality Support",
     description: "Register your hospitality business to join Gulu and Northern Uganda's premier hoteliers association. Access resources, collective advocacy, and marketing.",
     ogImage: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/membership"
+    url: "https://nuhaofficial.com/membership"
   },
   contact: {
     title: "Contact NUHA - Secretariat Offices in Gulu & Lira | Northern Uganda",
     description: "Get in touch with the Northern Uganda Hoteliers Association secretariat. Find email, phone lines, and physical office addresses for prompt support.",
     ogImage: "https://images.unsplash.com/photo-1423662055905-ec3d12f8b581?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/contact"
+    url: "https://nuhaofficial.com/contact"
   },
   admin: {
     title: "Administrative Control Panel | NUHA Secure Portal",
     description: "Secure, authorized-only console to audit applications, manage hotel listings, update regional attractions, and publish upcoming bulletins.",
     ogImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
     ogType: "website",
-    url: "https://northernugandahoteliers.org/admin"
+    url: "https://nuhaofficial.com/admin"
   }
 };
 
