@@ -148,10 +148,10 @@ export default function Footer({ setCurrentPage, currentPage }: FooterProps) {
             <div className="flex items-center gap-2.5 text-gray-400">
               <Mail className="w-4 h-4 text-brand-secondary shrink-0" />
               <a
-                href="mailto:numa.hoteliers.association@gmail.com"
+                href="mailto:nuha.hoteliers.association@gmail.com"
                 className="hover:text-white transition-colors break-all underline"
               >
-                numa.hoteliers.association@gmail.com
+                nuha.hoteliers.association@gmail.com
               </a>
             </div>
             <div className="flex items-center gap-2.5 text-gray-400">
