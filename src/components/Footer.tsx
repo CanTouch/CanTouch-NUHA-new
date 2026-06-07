@@ -156,7 +156,7 @@ export default function Footer({ setCurrentPage, currentPage }: FooterProps) {
             </div>
             <div className="flex items-center gap-2.5 text-gray-400">
               <Phone className="w-4 h-4 text-brand-secondary shrink-0" />
-              <span>+256 759984302</span>
+              <span>+256 759984301</span>
             </div>
           </div>
         </div>
