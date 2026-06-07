@@ -276,7 +276,7 @@ export default function App() {
 
       setIsSubmittingForm(false);
       setFormSubmittedSuccessfully(true);
-      triggerToast('Application processed! Sent copy securely to numa.hoteliers.association@gmail.com', 'success');
+      triggerToast('Application processed! Sent copy securely to nuha.hoteliers.association@gmail.com', 'success');
 
       // Clear fields
       setMemberForm({
@@ -791,8 +791,8 @@ export default function App() {
                       Have questions regarding advocacy, taxation policies, or membership qualifications? Get in touch with the Northern Uganda Hoteliers secretariat team.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6 pt-4 text-xs font-mono font-bold">
-                      <a href="mailto:numa.hoteliers.association@gmail.com" className="flex items-center justify-center gap-1.5 text-brand-secondary hover:underline">
-                        <Mail className="w-4 h-4 inline" /> numa.hoteliers.association@gmail.com
+                      <a href="mailto:nuha.hoteliers.association@gmail.com" className="flex items-center justify-center gap-1.5 text-brand-secondary hover:underline">
+                        <Mail className="w-4 h-4 inline" /> nuha.hoteliers.association@gmail.com
                       </a>
                       <span className="text-gray-400 font-light hidden sm:inline">|</span>
                       <p className="text-gray-600 flex items-center justify-center gap-1.5">
@@ -1313,7 +1313,7 @@ export default function App() {
                         </div>
                         <h4 className="text-lg font-serif text-brand-primary font-bold">Application Received Successfully!</h4>
                         <p className="text-xs text-gray-500 font-light leading-relaxed">
-                          Your hotel details have been synchronized into the association's database. A confirmation report has been automatically dispatched to <strong className="text-brand-primary">numa.hoteliers.association@gmail.com</strong>.
+                          Your hotel details have been synchronized into the association's database. A confirmation report has been automatically dispatched to <strong className="text-brand-primary">nuha.hoteliers.association@gmail.com</strong>.
                         </p>
                         <p className="text-[11px] font-mono text-brand-secondary font-bold">
                           Official Secretariat Reference ID: NUHA-REG-{Date.now().toString().slice(-5)}
@@ -1473,8 +1473,8 @@ export default function App() {
                             <Mail className="w-5 h-5 text-brand-accent shrink-0 mt-0.5" />
                             <div>
                               <p className="font-serif font-bold text-white text-base">Direct Web Addresses</p>
-                              <a href="mailto:numa.hoteliers.association@gmail.com" className="text-brand-accent underline block text-xs font-semibold mt-1 break-all">
-                                numa.hoteliers.association@gmail.com
+                              <a href="mailto:nuha.hoteliers.association@gmail.com" className="text-brand-accent underline block text-xs font-semibold mt-1 break-all">
+                                nuha.hoteliers.association@gmail.com
                               </a>
                             </div>
                           </div>
@@ -1683,7 +1683,7 @@ export default function App() {
                   <h4 className="text-[10px] uppercase font-mono font-bold tracking-wider text-gray-400">Official Association Secretariat</h4>
                   <div className="space-y-2 text-xs text-gray-600">
                     <p className="leading-relaxed">To book, verify registry parameters, or query local hospitality tariffs, contact the association:</p>
-                    <a href="mailto:numa.hoteliers.association@gmail.com" className="text-[#C9A35B] font-mono font-bold block hover:underline leading-none pt-1">numa.hoteliers.association@gmail.com</a>
+                    <a href="mailto:nuha.hoteliers.association@gmail.com" className="text-[#C9A35B] font-mono font-bold block hover:underline leading-none pt-1">nuha.hoteliers.association@gmail.com</a>
                     <a href="tel:+256759984301" className="text-gray-500 font-mono font-bold block hover:underline leading-none pt-2">+256 759984301</a>
                   </div>
                 </div>
@@ -1691,7 +1691,7 @@ export default function App() {
 
               <div className="pt-6 border-t border-gray-150 flex flex-col sm:flex-row gap-3">
                 <a 
-                  href="mailto:numa.hoteliers.association@gmail.com" 
+                  href="mailto:nuha.hoteliers.association@gmail.com" 
                   className="flex-1 bg-[#0F2344] text-white hover:bg-[#C9A35B] hover:text-[#0F2344] transition-all font-sans font-bold text-xs uppercase tracking-wider py-3 rounded-xl text-center shadow animate-pulse-slow"
                 >
                   Inquire via Secretariat
