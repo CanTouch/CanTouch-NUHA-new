@@ -122,12 +122,23 @@ export default function App() {
 
   // Load Database presets on mount
   useEffect(() => {
-    setHotels(getDBHotels());
-    setEvents(getDBEvents());
-    setAttractions(getDBAttractions());
-    setGallery(getDBGallery());
-    setApplications(getDBApplications());
-    setConfig(getDBConfig());
+    const loadData = async () => {
+      const [hotelsData, eventsData, attractionsData, galleryData, applicationsData, configData] = await Promise.all([
+        getDBHotels().catch(err => { console.error('HOTELS FAILED:', err); return []; }),
+        getDBEvents().catch(err => { console.error('EVENTS FAILED:', err); return []; }),
+        getDBAttractions().catch(err => { console.error('ATTRACTIONS FAILED:', err); return []; }),
+        getDBGallery().catch(err => { console.error('GALLERY FAILED:', err); return []; }),
+        getDBApplications().catch(err => { console.error('APPLICATIONS FAILED:', err); return []; }),
+        getDBConfig().catch(err => { console.error('CONFIG FAILED:', err); return null; })
+      ]);
+      setHotels(hotelsData);
+      setEvents(eventsData);
+      setAttractions(attractionsData);
+      setGallery(galleryData);
+      setApplications(applicationsData);
+      setConfig(configData);
+    };
+    loadData();
   }, []);
 
   // Listen for hidden url hash triggering admin panel access
@@ -369,7 +380,8 @@ export default function App() {
   const uniqueDistricts = ['All Districts', ...NORTHERN_UGANDA_DISTRICTS];
 
   // Filtered hotels directory logic
-  const filteredHotels = hotels.filter(hotel => {
+  const safeHotels = Array.isArray(hotels) ? hotels : [];
+  const filteredHotels = safeHotels.filter(hotel => {
     const matchesSearch = hotel.hotel_name.toLowerCase().includes(hotelSearchQuery.toLowerCase());
     const matchesDistrict = selectedDistrictFilter === 'All Districts' || hotel.district === selectedDistrictFilter;
     return matchesSearch && matchesDistrict;
