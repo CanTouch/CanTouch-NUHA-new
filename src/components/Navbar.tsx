@@ -51,8 +51,8 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
       id="nuha-navbar"
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 border-b ${
         isScrolled
-          ? 'bg-[#0F2344] backdrop-blur-md shadow-xl border-brand-accent/40 py-3 h-16'
-          : 'bg-[#0F2344]/95 backdrop-blur-sm border-[#C9A35B] py-4 h-20'
+          ? 'bg-white backdrop-blur-md shadow-[0_8px_30px_rgba(15,35,68,0.08)] border-gray-200 py-3 h-16'
+          : 'bg-white backdrop-blur-sm shadow-[0_4px_20px_rgba(15,35,68,0.05)] border-gray-200 py-4 h-20'
       } flex items-center justify-between`}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,8 +75,8 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
                   onClick={() => handleNavigate(item.id)}
                   className={`relative px-4 py-2 text-[10px] font-medium tracking-[0.18em] uppercase transition-all duration-300 ${
                     isActive
-                      ? 'text-[#C9A35B] font-semibold'
-                      : 'text-white/80 hover:text-white'
+                      ? 'text-[#0F2344] font-semibold'
+                      : 'text-[#0F2344]/70 hover:text-[#0F2344]'
                   }`}
                 >
                   {item.label}
@@ -120,7 +120,7 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
             )}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-gray-300 hover:text-white transition-colors border border-white/10 rounded-lg hover:bg-white/5"
+              className="p-2 text-[#0F2344] hover:text-[#0F2344]/80 transition-colors border border-gray-200 rounded-lg hover:bg-[#0F2344]/5"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -130,15 +130,15 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
 
       {/* Mobile Drawer menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-brand-primary border-b border-white/5 shadow-2xl py-4 px-4 space-y-2 animate-fade-in duration-200">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-300 shadow-[0_12px_35px_rgba(15,35,68,0.10)] py-4 px-4 space-y-2 animate-fade-in duration-200">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleNavigate(item.id)}
               className={`w-full text-left px-4 py-3 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors ${
                 currentPage === item.id
-                  ? 'bg-gradient-to-r from-brand-primary to-brand-accent/20 text-brand-accent border-l-4 border-brand-accent'
-                  : 'text-gray-300 hover:bg-white/5 hover:text-white'
+                  ? 'bg-[#0F2344] text-white border-l-4 border-[#C9A35B]'
+                  : 'text-[#0F2344] hover:bg-[#0F2344]/5 hover:text-[#0F2344]'
               }`}
             >
               {item.label}
