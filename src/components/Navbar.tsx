@@ -73,7 +73,7 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
                 <button
                   key={item.id}
                   onClick={() => handleNavigate(item.id)}
-                  className={`relative px-4 py-2 text-[10px] font-medium tracking-[0.18em] uppercase transition-all duration-300 ${
+                  className={`relative px-4 py-2 text-[12px] sm:text-[13px] font-semibold tracking-[0.2em] uppercase transition-all duration-300 ${
                     isActive
                       ? 'text-[#0F2344] font-semibold'
                       : 'text-[#0F2344]/70 hover:text-[#0F2344]'
@@ -81,7 +81,7 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
                 >
                   {item.label}
                   {isActive && (
-                    <span className="absolute bottom-1 left-4 right-4 h-[1px] bg-[#C9A35B]" />
+                    <span className="absolute bottom-1 left-4 right-4 h-[2px] bg-[#C9A35B]" />
                   )}
                 </button>
               );
@@ -135,7 +135,7 @@ export default function Navbar({ currentPage, setCurrentPage, isAdminLoggedIn, o
             <button
               key={item.id}
               onClick={() => handleNavigate(item.id)}
-              className={`w-full text-left px-4 py-3 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors ${
+              className={`w-full text-left px-4 py-3 rounded-lg text-sm font-semibold tracking-wider uppercase transition-colors ${
                 currentPage === item.id
                   ? 'bg-[#0F2344] text-white border-l-4 border-[#C9A35B]'
                   : 'text-[#0F2344] hover:bg-[#0F2344]/5 hover:text-[#0F2344]'
