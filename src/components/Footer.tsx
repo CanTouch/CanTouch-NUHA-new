@@ -24,8 +24,11 @@ export default function Footer({ setCurrentPage, currentPage }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Column 1: Info and Crest */}
           <div className="space-y-5">
-            <div className="flex items-center gap-4 cursor-pointer group" onClick={() => handleNavigate('home')}>
-              <NuhaLogo className="transition-transform duration-300 group-hover:scale-105" />
+            <div
+              className="inline-flex items-center justify-center rounded-2xl border border-[#C9A35B]/30 bg-white/10 px-4 py-3 shadow-[0_0_0_1px_rgba(255,255,255,0.04)] backdrop-blur-sm transition-all duration-300 hover:border-[#C9A35B]/60 hover:bg-white/15 cursor-pointer group"
+              onClick={() => handleNavigate('home')}
+            >
+              <NuhaLogo className="h-14 sm:h-16 w-auto transition-transform duration-300 group-hover:scale-105" />
             </div>
             <p className="text-xs text-gray-400 leading-relaxed font-light">
               Fostering collaborative growth, standardizing hospitality operations, and unveiling Northern Uganda as Africa's premier sustainable travel haven.
